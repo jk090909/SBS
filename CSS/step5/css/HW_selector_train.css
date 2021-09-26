@@ -1,0 +1,94 @@
+html,body,ul,ol{
+    margin: 0; padding: 0;
+}
+/* body{
+    position: absolute; top: 15%; left: 25%;
+} */
+ul > *:nth-of-type(odd){
+    background-color: rgb(177, 177, 177);
+}
+ul > *:nth-of-type(odd):hover{
+    background-color: rgb(144, 223, 255);
+}
+ul > *:nth-of-type(even):hover{
+    background-color: rgb(201, 144, 235);
+}
+ul > *:first-child{
+    background-color: rgb(56, 50, 48);
+}
+ul li{
+    text-transform: capitalize;
+    list-style: none;
+    height: 60px;
+}
+ul li >* {
+    display: inline-block;
+    color: rgb(134, 128, 128);
+    margin: 10px 0 0 15px;
+}
+ul li > *:first-child{
+    width: 15%;
+}
+ul li > *:nth-of-type(2){
+    width: 38%;
+    color: lightcoral;
+}
+ul li > *:nth-of-type(3){
+    width: 15%;
+}
+ul li > *:last-child{
+    width: 25%;
+}
+ul li > *:nth-of-type(4){
+    line-height: 15px;
+}
+/* div::after{
+    content:''; display: block; clear: both; 
+} */
+div a{
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 15px;
+}
+/* div a:first-child{
+    float: left;
+} */
+div > a:first-child{
+    position: relative;
+    top: 43px;
+    left: 500px;
+    font-size: 20px;
+    color: black;
+}
+div > a:nth-of-type(2){
+    position: relative;
+    top: 43px;
+    left: 1370px;
+    font-size: 20px;
+    color: black;
+}
+div ol {
+    margin-left: 27%;
+}
+div ol li{
+    display: inline-block;
+    width: 80px;
+    list-style: none;
+}
+div ol li a{
+    /* border: 1px solid red; */
+    color: rgb(44, 34, 34);
+    display: inline-block;
+    width: 80px;
+    padding: 7px;
+    text-align: center;
+    border-radius: 5px;
+}
+div ol li a:hover{
+    background-color: rgb(240, 61, 225);
+}
+form fieldset{
+    text-align: center;
+    border: none;
+    margin-top: 35px;
+}
