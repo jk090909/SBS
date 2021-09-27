@@ -1,0 +1,68 @@
+body{
+   width: 80%; margin: 50px auto;
+}
+ul {
+    margin: 0 0 30px; padding: 0; list-style-type: none;
+}
+ul li{
+    position: relative;
+    text-transform: capitalize;
+    height: 60px;
+}
+ul > *:nth-of-type(odd){
+    background-color: rgb(177, 177, 177);
+}
+ul > *:nth-of-type(odd):hover{
+    background-color: rgb(144, 223, 255);
+}
+ul > *:nth-of-type(even):hover{
+    background-color: rgb(201, 144, 235);
+}
+ul > *:first-child{
+    background-color: rgb(56, 50, 48);
+}
+ul li:after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+ul li span{
+    display: block; float: left; padding: 10px 2.5%; font-size: 14px;
+}
+ul li span:not(:nth-child(2)){
+    width: 15%;
+}
+ul li span:nth-child(2){ 
+    width: 35%;
+    color: lightcoral;
+}
+body > div{
+    max-width: 400px; margin: 0 auto; position: relative; line-height: 30px;
+}
+body > div > a{
+    position: absolute; display: block; top: 0; text-decoration: none;
+}
+body > div > a:first-child{
+    left: 15%;
+    color: black;
+}
+body > div > a:nth-of-type(2){
+    right: 15%;
+    color: black;
+}
+body > div > ol{
+    padding: 0 25px; margin: 0; text-align: center;
+}
+body > div > ol li {
+    display: inline-block;
+}
+body > div > ol li a{
+    text-decoration: none; font-size: 14px; padding: 5px ; border-radius: 5px; color: #056b;
+}
+body > div > ol li a:hover{
+    color: #fff;
+    background-color: fuchsia;
+}
+form fieldset{
+    text-align: center;
+    border: none;
+    margin-top: 35px;
+}
