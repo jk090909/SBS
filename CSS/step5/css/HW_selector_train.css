@@ -1,9 +1,14 @@
-html,body,ul,ol{
-    margin: 0; padding: 0;
+body{
+   width: 80%; margin: 50px auto;
 }
-/* body{
-    position: absolute; top: 15%; left: 25%;
-} */
+ul {
+    margin: 0 0 30px; padding: 0; list-style-type: none;
+}
+ul li{
+    position: relative;
+    text-transform: capitalize;
+    height: 60px;
+}
 ul > *:nth-of-type(odd){
     background-color: rgb(177, 177, 177);
 }
@@ -16,76 +21,45 @@ ul > *:nth-of-type(even):hover{
 ul > *:first-child{
     background-color: rgb(56, 50, 48);
 }
-ul li{
-    text-transform: capitalize;
-    list-style: none;
-    height: 60px;
+ul li:after{
+    content: ''; display: block; visibility: hidden; clear: both;
 }
-ul li >* {
-    display: inline-block;
-    color: rgb(134, 128, 128);
-    margin: 10px 0 0 15px;
+ul li span{
+    display: block; float: left; padding: 10px 2.5%; font-size: 14px;
 }
-ul li > *:first-child{
+ul li span:not(:nth-child(2)){
     width: 15%;
 }
-ul li > *:nth-of-type(2){
-    width: 38%;
+ul li span:nth-child(2){ 
+    width: 35%;
     color: lightcoral;
 }
-ul li > *:nth-of-type(3){
-    width: 15%;
+body > div{
+    max-width: 400px; margin: 0 auto; position: relative; line-height: 30px;
 }
-ul li > *:last-child{
-    width: 25%;
+body > div > a{
+    position: absolute; display: block; top: 0; text-decoration: none;
 }
-ul li > *:nth-of-type(4){
-    line-height: 15px;
-}
-/* div::after{
-    content:''; display: block; clear: both; 
-} */
-div a{
-    display: inline-block;
-    text-decoration: none;
-    margin-top: 15px;
-}
-/* div a:first-child{
-    float: left;
-} */
-div > a:first-child{
-    position: relative;
-    top: 43px;
-    left: 500px;
-    font-size: 20px;
+body > div > a:first-child{
+    left: 15%;
     color: black;
 }
-div > a:nth-of-type(2){
-    position: relative;
-    top: 43px;
-    left: 1370px;
-    font-size: 20px;
+body > div > a:nth-of-type(2){
+    right: 15%;
     color: black;
 }
-div ol {
-    margin-left: 27%;
+body > div > ol{
+    padding: 0 25px; margin: 0; text-align: center;
 }
-div ol li{
+body > div > ol li {
     display: inline-block;
-    width: 80px;
-    list-style: none;
 }
-div ol li a{
-    /* border: 1px solid red; */
-    color: rgb(44, 34, 34);
-    display: inline-block;
-    width: 80px;
-    padding: 7px;
-    text-align: center;
-    border-radius: 5px;
+body > div > ol li a{
+    text-decoration: none; font-size: 14px; padding: 5px ; border-radius: 5px; color: #056b;
 }
-div ol li a:hover{
-    background-color: rgb(240, 61, 225);
+body > div > ol li a:hover{
+    color: #fff;
+    background-color: fuchsia;
 }
 form fieldset{
     text-align: center;
