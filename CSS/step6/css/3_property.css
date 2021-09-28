@@ -38,3 +38,75 @@ div{
 .visibilityProperty span:nth-child(2){
     height: 500px; visibility: hidden;
 }
+.visibilityProperty input[type='checkbox']:checked ~ table{
+    visibility: visible;
+}
+.visibilityProperty table{
+    visibility: collapse;
+}
+/* 
+    ?visibility
+    visible = 보여주다.
+    hidden = 감추다.(영역보존? render는됨)
+    collapse = table만 감춤
+*/
+.opacityProperty ul:after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+.opacityProperty ul li{
+    display: block; float: left; width: 33%; background-color: black;
+    position: relative;
+}
+.opacityProperty ul li:not(:first-child){
+    margin-left: 0.5%;
+}
+.opacityProperty ul li figure{
+    margin: 0;
+}
+.opacityProperty ul li img{
+    width: 100%; opacity: 0.3; transition-duration: 0.75s;
+}
+.opacityProperty ul li:hover figure img{
+    opacity: 1;
+}
+.opacityProperty ul li figure figcaption{
+    position: absolute; width: 50%; height: 50%; left: 25%; top: 25%;
+    background-color: rgba(255,255,255,0.5);
+    transition-duration: 0.5s;
+}
+.opacityProperty ul li figure figcaption dl dt{
+    font-size: 15px; font-weight: bold; margin-bottom: 30px; text-align: center;
+}
+.opacityProperty ul li figure figcaption dl dd{
+    font-size: 14px; color: #444; margin: 0; text-align: center;
+}
+.opacityProperty ul li figure figcaption:hover{
+    /* display: none; */ opacity: 0;
+}
+.boxsizingProperty div{
+    width: 500px; margin: 0 auto; border: 10px solid #ff6a00;
+    background-color: #fc9393; padding: 50px;
+}
+.boxsizingProperty div:first-child{
+    box-sizing: content-box;
+}
+.boxsizingProperty div:last-child{
+    box-sizing: border-box;
+}
+.shadowProperty h1{
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+}
+/*! horizen / vertical / buler / color */
+.shadowProperty p {
+    width: 300px; height: 300px;
+}
+.shadowProperty p:first-of-type{
+    box-shadow: 5px 5px 8px 0px;
+}
+/* ! H / V / B / S(선택) / C */
+.shadowProperty p:last-of-type{
+    box-shadow: inset 5px 5px 8px 0px rgba(0,0,0,0.5);
+}
+
+
+/* !! css3generator.com 실무에 도움이 되는 단축키 사이트*/
