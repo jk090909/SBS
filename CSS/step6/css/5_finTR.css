@@ -1,0 +1,62 @@
+html, body{
+    height: 100%;
+}
+body{
+    margin: 0 auto; width: 90%;
+}
+aside{
+    width: 50%; height: 80%; float: left; padding-top: 14%; box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+p strong{
+    display: block;
+}
+p{
+    font-size: 12px;
+}
+aside:first-of-type{
+    padding-right: 5%;
+}
+aside:first-of-type footer{
+    color: rgb(21, 1, 156);
+}
+aside:last-of-type ul{
+    margin: 0; padding: 0;
+}
+aside:last-of-type ul li{
+    padding: 10px 5%; text-align: right; display: block;
+    transition-duration: 1s; overflow-y: hidden;
+}
+
+aside:last-of-type ul li:nth-child(1){background-color: rgb(176, 255, 180);}
+aside:last-of-type ul li:nth-child(2){background-color: rgb(152, 250, 113);}
+aside:last-of-type ul li:nth-child(3){background-color: rgb(129, 253, 91);}
+aside:last-of-type ul li:nth-child(4){background-color: rgba(65, 246, 95, 0.746);}
+aside:last-of-type ul li:nth-child(5){background-color: rgb(79, 250, 27);}
+aside:last-of-type ul li:nth-child(6){background-color: rgba(60, 248, 43, 0.733);}
+aside:last-of-type ul li:nth-child(7){background-color: rgba(39, 248, 20, 0.972);}
+
+aside:last-of-type ul li p{
+    width: 80%; float: left; height: 0; opacity: 0;
+    transition-property: height, opacity;
+    transition-duration: 1s, 2s;
+}
+aside:last-of-type ul li:hover p{
+    height: 220px; opacity: 1; color: white;
+}
+aside:last-of-type ul li a{
+    color: white; font-size: 12px;
+}
+aside:last-of-type ul li:hover a{
+    color: black;
+}
+aside:last-of-type ul li a:before{
+    content: '+';
+}
+aside:last-of-type ul li:hover a:before{
+    content: '>';
+    font-weight: bold;
+    font-size: 20px;
+}
