@@ -228,9 +228,10 @@ section[class $=Area] > hr{
         display: inline-block; color: white;
     }
     footer > div div:last-of-type a:not(:first-of-type){
-        margin-left: 5.5%; 
+        margin-left: 5.5%;
     }
 }
+/* ?mobile */
 /* ?mobile */
 
 @media screen and (min-width: 768px) and (max-width: 1279px){
@@ -452,7 +453,6 @@ section[class $=Area] > hr{
     }
     header > div h1 a img{
         width: 100%;
-        outline: 1px solid red;
     }
     header > div nav{
         position: absolute; top: 0; right: 0; width: 100%; padding-left: 130px;

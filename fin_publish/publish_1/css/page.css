@@ -1,12 +1,9 @@
 @media screen and (max-width: 767px){
-    #about:after{
-        content: ''; display: block; visibility: hidden; clear: both;
+    #about{
+        text-align: center;
     }
     #about img{
-        float: left; max-width: 235px; width: 32%;
-    }
-    #about figcaption{
-        width: 60%; float: left; margin-left: 8%;
+        max-width: 235px; width: 50%;
     }
     #about figcaption > *:not(a){
         margin-bottom: 30px;
@@ -19,7 +16,7 @@
         line-height: 22px;
     }
     #about figcaption a.btn_more{
-        max-width: 120px;
+        max-width: 120px; margin: 0 auto;
     }
     /* * CI figure Fin */
 
@@ -45,22 +42,14 @@
     }
     section.expArea p{
         font-size: 14px; font-weight: 400; color: rgba(47,45,53,0.75);
-        margin-bottom: 15px;
-    }
-    section.expArea ul:after{
-        content: ''; display: block; visibility: hidden; clear: both;
+        margin-bottom: 15px; line-height: 21px;
     }
     section.expArea ul li{
-        width: 33.33%; float: left; display: block; padding: 120px 2.5% 40px;;
+        display: block; padding: 120px 2.5% 40px;
         box-sizing: border-box; background-repeat: no-repeat;
-        background-position: center 30px; border-top: 1px solid rgba(0,0,0,0.2);
+        background-position: center 30px; border-bottom: 1px solid rgba(0,0,0,0.2);
     }
-    section.expArea ul li:nth-child(n):nth-child(-n+3){
-        border-top: none;
-    }
-    section.expArea ul li:not(:nth-child(3n)){
-        border-right: 1px solid rgba(0,0,0,0.2);
-    }
+
     section.expArea ul li:nth-child(1){background-image: url('../images/ico_01.png');}
     section.expArea ul li:nth-child(2){background-image: url('../images/ico_02.png');}
     section.expArea ul li:nth-child(3){background-image: url('../images/ico_03.png');}
@@ -81,13 +70,13 @@
 
     section.teamArea{
         background: url('../images/bg_03.png') left top / cover no-repeat;
-        color: white; padding: 70px 0; text-align: center;
+        color: white; padding: 70px 3%; text-align: center;
     }
     section.teamArea h2{
         font-size: 22px; font-weight: 700; margin-bottom: 10px;
     }
     section.teamArea > p{
-        font-size: 14px;
+        font-size: 14px; line-height: 21px;
     }
     section.teamArea > p:first-of-type{
         margin-bottom: 15px;
@@ -96,23 +85,20 @@
         border-color: rgba(255,255,255,0.2);
     }
     section.teamArea ul{
-        max-width: 728px; margin: 0 auto 70px;
-    }
-    section.teamArea ul:after{
-        content: ''; display: block; visibility: hidden; clear: both;
+        margin-bottom: 70px;
     }
     section.teamArea ul li{
-        width: 23.5%; float: left; display: block;
+        display: block;
     }
-    section.teamArea ul li:not(:first-child){
-        margin-left: 2%;
+    section.teamArea ul li:not(:last-child){
+        margin-bottom: 20px;
     }
     section.teamArea ul li figure{
-        background: url('https://via.placeholder.com/220x230') center top / contain no-repeat;
+        background: url('https://via.placeholder.com/220x230') center top / cover no-repeat;
         padding-top: 179px;
     }
     section.teamArea ul li figure figcaption{
-        border: 1px solid rgba(255,255,255,0.5); padding: 20px 0;
+        border: 1px solid rgba(241, 3, 3, 0.5); padding: 20px 0;
     }
     section.teamArea ul li figure figcaption dl dt{
         font-size: 14px; font-weight: 900; margin-bottom: 10px;
@@ -132,23 +118,23 @@
         padding: 70px 0;
     }
     section.worksArea h2{
-        font-size: 22px; font-weight: 700; color: #413d4b; max-width: 728px;
+        font-size: 18px; font-weight: 700; color: #413d4b;
         margin: 0 auto 70px; position: relative;
     }
     section.worksArea h2 a{
-        font-size: 14px; font-weight: 300; color: #413d4b; position: absolute;
-        right: 0; top: 0; top: 8px;
+        font-size: 12px; font-weight: 300; color: #413d4b; position: absolute;
+        right: 3%; top: 4px;
     }
     /* todo. imglist 완성시키기 */
     
     section.worksArea ul{
         margin-bottom: 70px;
     }
-    section.worksArea ul:after{
-        content: ''; display: block; visibility: hidden; clear: both;
-    }
     section.worksArea ul li{
-        width: 16.66%; float: left; display: block; line-height: 0;
+        display: block; line-height: 0;
+    }
+    section.worksArea ul li:not(:last-child){
+        margin-bottom: 20px;
     }
     section.worksArea ul li img{
         width: 100%;
@@ -166,7 +152,7 @@
         display: none;
     }
     section.talkArea p{
-        max-width: 940px; margin: 0 auto 45px; padding-top: 70px;
+        max-width: 600px; margin: 0 auto 45px; padding: 70px 3% 0;
         background: url('../images/quote.png') no-repeat center top;
         font-size: 16px; line-height: 26px; font-weight: 400; color: white;
     }
@@ -181,7 +167,7 @@
         font-size: 13px; font-weight: 300; color: rgba(255,255,255,0.7);
     }
     section.talkArea div{
-        max-width: 940px; margin: 0 auto;
+        max-width: 600px; margin: 0 auto;
     }
     section.talkArea div > *{
         display: inline-block; vertical-align: middle;        
@@ -190,7 +176,7 @@
         font-size: 22px; color: rgba(255,255,255,0.5);
     }
     section.talkArea div ul{
-        max-width: 310px; width: 33%;
+        max-width: 310px; width: 80%;
     }
     section.talkArea div ul li{
         float: left; display: block; width: 19%;
@@ -217,22 +203,18 @@
         width: 100%;
     }
     /* *talk Area */
-    section.contactArea:after{
-        content: ''; display: block; visibility: hidden; clear: both;
-    }
     section.contactArea h2{
         display: none;
     }
-    section.contactArea form fieldset,
-    section.contactArea div{
-        float: left; display: block;
-    }
     section.contactArea form fieldset{
-        width: 50%;
+        margin-bottom: 50px; width: 100%;
     }
     section.contactArea form fieldset legend,
     section.contactArea div h3{
         font-size: 22px; font-weight: 700; color: #413d4b; margin-bottom: 35px;
+    }
+    section.contactArea div h3{
+        padding-top: 20px; display: block; width: 100%;
     }
     section.contactArea form fieldset *:not(legend){
         box-sizing: border-box;
@@ -250,13 +232,10 @@
     }
     section.contactArea form fieldset .btn_more{
         background-color: transparent; cursor: pointer;
-        min-width: 120px;
+        min-width: 120px; float: right;
     }
     /* * left Fieldset Fin */
     
-    section.contactArea div{
-        width: 40%; margin-left: 10%;
-    }
     section.contactArea div ul:after{
         content: ''; display: block; visibility: hidden; clear: both;
     }
@@ -413,7 +392,7 @@
     }
     section.worksArea h2 a{
         font-size: 14px; font-weight: 300; color: #413d4b; position: absolute;
-        right: 0; top: 0; top: 8px;
+        right: 0; top: 0;
     }
     /* todo. imglist 완성시키기 */
     
@@ -442,7 +421,7 @@
         display: none;
     }
     section.talkArea p{
-        max-width: 940px; margin: 0 auto 45px; padding-top: 70px;
+        max-width: 728px; margin: 0 auto 45px; padding-top: 70px;
         background: url('../images/quote.png') no-repeat center top;
         font-size: 16px; line-height: 26px; font-weight: 400; color: white;
     }
@@ -690,7 +669,7 @@
     }
     section.worksArea h2 a{
         font-size: 14px; font-weight: 300; color: #413d4b; position: absolute;
-        right: 0; top: 8px
+        right: 0; top: 0;
     }
     section.worksArea ul{
         margin-bottom: 70px;
