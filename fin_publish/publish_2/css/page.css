@@ -143,5 +143,110 @@
         text-align: right;
     }
     /* * sortBy Fin */
+    .contentArea aside{
+        width: 23%; float: left;
+    }
+    .contentArea aside nav{
+        background-color: #fff; margin-bottom: 30px; border-radius: 5px;
+    }
+    .contentArea aside nav ul li,
+    .contentArea aside nav ul li a{
+        display: block;
+    }
+    .contentArea aside nav ul > li:not(:last-child){
+        border-bottom: 1px solid #f0f2f7;
+    }
+    .contentArea aside nav ul > li > a{
+        font-size: 13px; color: #343e5c; padding: 15px 7.4%;
+        font-weight: 700;
+    }
+    .contentArea aside ul > li > a:after{
+        content: url('../images/bg_arrow.png'); float: right;
+        transform: rotate(-90deg); transition: 0.5s ease-in-out;
+    }
+    .contentArea aside nav ul > li:hover > a:after{
+        transform: rotate(0deg);
+    }
+    .contentArea aside nav ul > li ol{
+        background-color: #f0f2f7;
+    }
+    .contentArea aside nav ul > li ol li a{
+        font-size: 0px; color: #a1a7bd; opacity: 0;
+        padding: 0px 7.4%; transition-duration: 0.3s;
+    }
+    .contentArea aside nav ul > li:hover ol li a{
+        font-size: 11px; opacity: 1; padding: 15px 7.4%;
+        border-bottom: 1px solid #dfe4ee;
+    }
+    .contentArea section{
+        width: 74.44%; margin-left: 2.56%; float: left;
+        outline: 1px solid red;
+    }
+
+    
+    .contentArea aside fieldset{
+        background-color: white; border-radius: 5px; 
+        padding-top: 30px;
+    }
+    .contentArea aside fieldset legend{
+        position: relative; top: 30px; font-size: 11px; color: #343e5c;
+        border-bottom: 1px solid #f0f2f7; width: 100%; padding: 0 7.4% 15px;
+        font-weight: 500; box-sizing: border-box;
+    }
+    .contentArea aside fieldset legend a{
+        color: #2754eb; border-bottom: 2px solid #c9d4fa; float: right;
+    }
+    .contentArea aside fieldset label,
+    .contentArea aside fieldset span{
+        line-height: 50px;
+    }
+    .contentArea aside fieldset label{
+        font-size: 13px; color: #343e5c; display: inline-block; box-sizing: border-box;
+        padding-left: 20.37%;
+    }
+    .contentArea aside fieldset span{
+        font-size: 11px; color: #bdbfd3; display: inline-block; text-align: center;
+        width: 15%; max-width: 65px;
+    }
+    .contentArea aside fieldset label[for*='ava'],
+    .contentArea aside fieldset label[for*='brand']{
+        width: 83%; max-width: 205px;
+    }
+    .contentArea aside fieldset label[for*='Condition']{
+        width: 93%; max-width: 270px;
+    }
+    .contentArea aside fieldset label[for*='dlvr']{
+        width: 49%; max-width: 135px;
+    }
+    .contentArea aside fieldset label[for*='dlvr']:last-of-type{
+        border-left: 2px solid #f0f2f7;
+    }
+
+    .contentArea section{
+        width: 74.44%; margin-left: 2.56%; float: left;
+    }
+    /* aside form fieldset{
+        background-color: #fff; border-radius: 5px; font-size: 15px;
+        font-weight: 500; padding-top: 30px;
+    }
+    aside form fieldset legend{
+        position: relative; top: 10px; border-bottom: 1px solid #f0f2f7;
+        width: 100%; padding: 30px 10px 10px 0; font-weight: 500;
+    }
+    aside form fieldset legend > a{
+        position: absolute; right: 50px; color: #2754eb; border-bottom: 1px solid #2754eb;
+        font-weight: 500;
+    }
+    aside form fieldset label{
+        outline: 1px solid blue;
+        width: 50%;
+    }
+    aside form fieldset > *:not(span){
+        display: block; float: left; margin-bottom: 25px; margin-left: 20px;
+        background-image: url('../images/bul_check.png') no-repeat;
+    }
+    aside form fieldset > span{
+        outline: 1px solid red; float: right; margin-right: 30px;
+    } */
 }
 /* ?desktop */
