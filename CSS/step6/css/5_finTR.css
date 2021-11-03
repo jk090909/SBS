@@ -28,6 +28,7 @@ aside:last-of-type ul{
 aside:last-of-type ul li{
     padding: 10px 5%; text-align: right; display: block;
     transition-duration: 1s; overflow-y: hidden;
+    /* ? overflow hidden은 넘치는영역은 자르는걸로 알고있는데 여기서 저 효과가 이해가 잘 안됨 */
 }
 
 aside:last-of-type ul li:nth-child(1){background-color: rgb(176, 255, 180);}
