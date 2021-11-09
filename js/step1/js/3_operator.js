@@ -65,6 +65,7 @@ function numberPlusBefore(){
     alert(++number); //? 10에 1을 더해서 (11) 출력후, 다시 number 로 -
     alert(++number); //? 11에 1을 더해서 (12) 출력후, 다시 number 로 -
     alert(++number); //? 12에 1을 더해서 (13) 출력후, 다시 number 로 -
+    console.log(number);
 }
 // todo. 증감연산자복합사용
 function numberPlusTodo(){
@@ -87,14 +88,14 @@ function compareOperator2(){
     var a = 10;
     var b = 20;
     var result = a == b;
-    console.log("10 = 20 ? " + result);
+    console.log("10 = 20 = " + result);
 }
 // todo. 숫자 10이 담긴 변수a와 숫자 20이 담긴 변수b가 "다른지" 비교하여 결과출력.
 function compareOperator3(){
     var a = 10;
     var b = 20;
     var result = a!=b;
-    console.log("10 != 20 ? " + result);
+    console.log("10 != 20 = " + result);
 }
 
 /* 
@@ -103,8 +104,8 @@ function compareOperator3(){
 */
 function logicalOperator1(){
     var a = '여자';
-    var b = '웹퍼블리셔';
-    var result = (a=='여자')&&(b=='웹디자이너');
+    var b = '웹디자이너';
+    var result = (a=='여자')&&(b=='웹퍼블리셔');
     console.log('result = ' + result);
 }
 /*
@@ -121,11 +122,12 @@ function logicalOperator2(){
 function compareOperator4(){
     console.log(30 > 20 > 10); //? 예상결과 : true / 출력결과 : false
 }
-
+// ?
 // todo. 정상적인 결과가 출력되도록 코드 수정.
 function compareOperator4R(){
     console.log(30 > 20 && 20 > 10);
 }
+// ?
 /*
     ! (30 > 20 > 10); 의 결과식은 거짓으로 판별
     ? (30 > 20) > 10, true > 10, 1> 10, false.
