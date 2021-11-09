@@ -9,7 +9,7 @@
  */
 // *case. 1 자신의 나이를 입력받고 20을 더한 값 출력.
 function agePlus(){
-    var age = window.prompt('나이입력');
+    var age = prompt('나이입력');
     var result = Number(age) + 20;
     console.log(result);
 }
@@ -59,6 +59,8 @@ function bgColorRandom(){
         $("body").css("background-color", "#" + bgColor);
     }, 1000);
 }
+// ??
+
 // *case.6 test에 들어있는 문자를 숫자로 형변환
 /*
     ? parse
@@ -75,6 +77,7 @@ function numbString(){
 }
 
 // todo.1 변수 test 에 들어있는 숫자 100을 문자 형으로 변형. result에 대입하라.
+
 
 // todo. 1-1 암시적 형변환
 /*
