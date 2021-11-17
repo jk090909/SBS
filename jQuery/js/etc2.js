@@ -3,6 +3,8 @@ $(document).ready(function(){
     // moveCircle();
     $("#btnMoveCircle").click(moveCircle);
 
+    $('#btnDetailMove').click(moveCircleDetail);
+
 });
 // *case.1 
 function moveCircle(){
@@ -16,3 +18,20 @@ function moveCircle(){
         alert('잘못된 수치입니다.');
     }
 }
+function moveCircleDetail(){
+    var $circleDetail = $('.circleDetail');
+    var xpos = $('#xpos');
+    var ypos = $('#ypos');
+
+    xpos = parseInt(xpos);
+    ypos = parseInt(ypos);
+
+    if(xpos >= 0 && xpos <= 380){
+        $circleDetail.css('left',xpos);
+    }else if
+        (ypos >= 0 && ypos <= 380){
+            $circleDetail.css('top',ypos);
+        }else{
+            alert('잘못된 입력값입니다.');
+        }
+    }
