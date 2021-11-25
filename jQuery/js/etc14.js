@@ -17,20 +17,20 @@ function init(){
     $panel = $(".panel");
 }
 function initEvent(){
+    $btnStart.click(gameStart);
+    $circle.click(scoreCount);
     /*
         ? click event를 하나의 함수로 처리 = boolean 변수를 바라보고 작동하게 되는 경우 유리.
         * clickEvent 자체를 다른 함수에 넣어버렸을 때 전역변수 boolean에 의해 작동해야하는
         * (2차처리부) - 오류가 생긴다.
     */
-    $btnStart.click(gameStart);
-    $circle.click(scoreCount);
 }
 function gameStart(){
     playState = true; //? btnStart를 click 했을 때 playState 전환.
     if(playState == true){
-        gameEnd(); //? 게임종료함수
-        timerID = setInterval(moveCircle, 500);
+        timerID = setInterval(moveCircle, 1500);
         //? 0.5초마다 $circle의 left, top 좌표 적용.
+        gameEnd(); //? 게임종료함수
     }
 }
 function moveCircle(){
@@ -38,6 +38,9 @@ function moveCircle(){
         left: Math.floor(Math.random() * ($panel.width() - $circle.width())),
         top: Math.floor(Math.random() * ($panel.height() - $circle.height()))
         //? random으로 frame내에서 circle의 좌표 생산.
+        // * random 함수는 최대한 많은 경우의 수의 실수들을 만들기 위해 최대한의 값을 곱해준다.
+        //! floor는 실수를 정수 반환시 기준이 아래로 내려서 나온다. ex ) 1.01 = 1 , 1.493 = 1 , 1.9743 = 1
+        //! ceil = 실수를 정수 변환시 기준이 위로 올려서 나옴. ex ) 1.053 = 2 , 1.357 = 2 , 1.93 = 2
     });
 }
 function scoreCount(){
